@@ -1,7 +1,8 @@
 // Lexxys Infrastructural library.
 // file: Alias.cs
 //
-// Copyright (c) 2001-2014.
+// Copyright (c) 2001-2014, Kraft Pro Utilities.
+// You may use this code under the terms of the MIT license
 //
 namespace Lexxys.DataParsers.Templates
 {
@@ -34,3 +35,4 @@ namespace Lexxys.DataParsers.Templates
 		}
 	}
 }
+
