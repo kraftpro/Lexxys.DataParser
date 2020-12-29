@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net48</TargetFrameworks>
+    <LangVersion>8.0</LangVersion>
+    <!-- format: major.minor.revision[-betta+MMDD.i] -->
+    <Version>1.4.1-betta1</Version>
+    <Description>Common Data Parser Library</Description>
+    <Copyright>Copyright © 2001-2016</Copyright>
+    <Authors>Common Software Foundation</Authors>
+    <AssemblyName>Lexxys.DataParser</AssemblyName>
+    <RootNamespace>Lexxys.DataParser</RootNamespace>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Lexxys\src\Lexxys\Lexxys.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Lexxys.DataParser.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
