@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexxys.DataParser", "Lexxys
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexxys", "..\..\..\Lexxys\src\Lexxys\Lexxys.csproj", "{A825E8DC-21C3-4DD4-9053-221EBF4EAB09}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ext", "ext", "{08C8DE75-D9E0-4765-AA1A-75F68A8BC646}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A825E8DC-21C3-4DD4-9053-221EBF4EAB09} = {08C8DE75-D9E0-4765-AA1A-75F68A8BC646}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9D3C30F-D56F-4DC1-A995-8741CB90F3C2}
