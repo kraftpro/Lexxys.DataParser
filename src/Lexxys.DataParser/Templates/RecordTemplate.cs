@@ -19,12 +19,10 @@ namespace Lexxys.DataParsers.Templates
 	{
 		public RecordTemplate(ReportTemplate report, XmlLiteNode node)
 		{
-			if (report == null)
-				throw EX.ArgumentNull(nameof(report));
 			if (node == null)
 				throw EX.ArgumentNull(nameof(node));
 
-			Report = report;
+			Report = report ?? throw EX.ArgumentNull(nameof(report));
 			Name = node["name"];
 			Description = node["description"];
 			ParserType = node["parserType"] ?? report.ParserType;
@@ -57,8 +55,7 @@ namespace Lexxys.DataParsers.Templates
 
 		public int IndexOf(string name)
 		{
-			int result;
-			return Map.TryGetValue(name, out result) ? result : -1;
+			return Map.TryGetValue(name, out var result) ? result : -1;
 		}
 	}
 }

@@ -33,13 +33,8 @@ namespace Lexxys.DataParsers
 
 		public DataField(DataRecord record, FieldTemplate template)
 		{
-			if (record == null)
-				throw EX.ArgumentNull("record");
-			if (template == null)
-				throw EX.ArgumentNull("template");
-
-			Record = record;
-			Template = template;
+			Record = record ?? throw EX.ArgumentNull(nameof(record));
+			Template = template ?? throw EX.ArgumentNull(nameof(template));
 			_default = Factory.DefaultValue(Template.ValueType);
 			TryParse(template.DefaultValue, Template.ValueType, ref _default);
 			_value = _default;

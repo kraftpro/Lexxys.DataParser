@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;net48</TargetFrameworks>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <VersionPrefix>1.4.1</VersionPrefix>
-    <VersionSuffix>betta1</VersionSuffix>
+    <VersionSuffix></VersionSuffix>
     <!--Build>0$([System.DateTime]::Today.ToString("MMdd"))</Build-->
     <Build>0</Build>
     <FileVersion>$(VersionPrefix).$(Build)</FileVersion>

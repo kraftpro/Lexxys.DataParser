@@ -17,19 +17,15 @@ namespace Lexxys.DataParsers
 		public static Engines.Engine Create(Templates.RecordTemplate template)
 		{
 			if (template == null)
-				throw EX.ArgumentNull("template");
+				throw EX.ArgumentNull(nameof(template));
 
-			switch ((template.ParserType ?? "").ToUpperInvariant())
+			return template.ParserType?.ToUpperInvariant() switch
 			{
-				case "FIXED":
-					return new Engines.EngineFixed(template);
-				case "DELIMITED":
-					return new Engines.EngineDelimited(template);
-				case "LIST":
-					return new Engines.EngineList(template);
-				default:
-					throw EX.ArgumentOutOfRange("template.ParserType", template.ParserType);
-			}
+				"FIXED" => new Engines.EngineFixed(template),
+				"DELIMITED" => new Engines.EngineDelimited(template),
+				"LIST" => new Engines.EngineList(template),
+				_ => throw EX.ArgumentOutOfRange("template.ParserType", template.ParserType),
+			};
 		}
 	}
 }

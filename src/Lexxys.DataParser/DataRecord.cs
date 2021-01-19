@@ -53,7 +53,7 @@ namespace Lexxys.DataParsers
 		public bool Parse(CharStream text)
 		{
 			if (text == null)
-				throw EX.ArgumentNull("text");
+				throw EX.ArgumentNull(nameof(text));
 
 			_at = text.Position;
 			return _template.Engine.Parse(this, text);

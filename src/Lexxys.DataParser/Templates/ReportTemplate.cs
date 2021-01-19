@@ -16,12 +16,10 @@ namespace Lexxys.DataParsers.Templates
 	{
 		public ReportTemplate(Template template, XmlLiteNode node)
 		{
-			if (template == null)
-				throw EX.ArgumentNull(nameof(template));
 			if (node == null)
 				throw EX.ArgumentNull(nameof(node));
 
-			Template = template;
+			Template = template ?? throw EX.ArgumentNull(nameof(template));
 			Name = node["name"];
 			Description = node["description"];
 			ParserType = node["parserType"] ?? Template.DefaultParserType;

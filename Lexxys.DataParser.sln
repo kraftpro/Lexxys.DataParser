@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexxys.DataParser", "src\Lexxys.DataParser\Lexxys.DataParser.csproj", "{A5B65077-C253-4809-A45F-B3409B2E579B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lexxys", "..\Lexxys\src\Lexxys\Lexxys.csproj", "{BFA91BF5-ACCC-43F1-A9C7-90D5BF080147}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5B65077-C253-4809-A45F-B3409B2E579B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B65077-C253-4809-A45F-B3409B2E579B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B65077-C253-4809-A45F-B3409B2E579B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B65077-C253-4809-A45F-B3409B2E579B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA91BF5-ACCC-43F1-A9C7-90D5BF080147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA91BF5-ACCC-43F1-A9C7-90D5BF080147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA91BF5-ACCC-43F1-A9C7-90D5BF080147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA91BF5-ACCC-43F1-A9C7-90D5BF080147}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E7E58F0-4818-4F67-820E-143D55DBDFF7}
+	EndGlobalSection
+EndGlobal

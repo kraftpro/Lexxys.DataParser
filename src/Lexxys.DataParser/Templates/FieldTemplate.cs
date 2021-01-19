@@ -64,9 +64,9 @@ namespace Lexxys.DataParsers.Templates
 		public FieldTemplate(RecordTemplate record, XmlLiteNode node)
 		{
 			if (record == null)
-				throw EX.ArgumentNull("record");
+				throw EX.ArgumentNull(nameof(record));
 			if (node == null)
-				throw EX.ArgumentNull("node");
+				throw EX.ArgumentNull(nameof(node));
 
 			Aliases = record.Aliases;
 			Name = node["name"];

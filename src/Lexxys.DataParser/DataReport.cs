@@ -16,10 +16,7 @@ namespace Lexxys.DataParsers
 	{
 		public DataReport(ReportTemplate template)
 		{
-			if (template == null)
-				throw EX.ArgumentNull("template");
-
-			ReportTemplate = template;
+			ReportTemplate = template ?? throw EX.ArgumentNull(nameof(template));
 			var records = new Dictionary<string, DataRecord>(StringComparer.OrdinalIgnoreCase);
 			foreach (var record in template.Records.Select(o => new DataRecord(o)))
 			{

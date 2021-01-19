@@ -26,7 +26,7 @@ namespace Lexxys.DataParsers.Templates
 		public Alias(XmlLiteNode node)
 		{
 			if (node == null)
-				throw EX.ArgumentNull("node");
+				throw EX.ArgumentNull(nameof(node));
 
 			Name = node["name"];
 			Picture = node["picture"];
